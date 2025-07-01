@@ -51,11 +51,11 @@ const features = [
 
 export default function Home() {
   return (
-    <main className="flex-1 p-2 lg:p-5 bg-gradient-to-bl from-white to-indigo-600">
-      <div className="bg-white py-24 sm:py-32 rounded-md drop-shadow-xl">
-        <div className="flex flex-col w-full justify-center items-center mx-auto max-w-7xl px-6 lg:px-8">
+    <main className="flex-1 bg-gradient-to-bl from-white to-indigo-600 p-2 lg:p-5">
+      <div className="rounded-md bg-white py-24 drop-shadow-xl sm:py-32">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="capitalize text-base font-semibold leading-7 text-indigo-600">
+            <h2 className="text-base leading-7 font-semibold text-indigo-600 capitalize">
               Your interactive document companion
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -78,7 +78,7 @@ export default function Home() {
           </Button>
         </div>
         <div className="pt-16">
-          <div className="mx-auto relative overflow-hidden max-w-7xl px-6 lg:px-8">
+          <div className="relative mx-auto max-w-7xl overflow-hidden px-6 lg:px-8">
             <Image
               alt="App screenshot"
               src="https://placehold.co/2432x1442/png"
@@ -87,7 +87,7 @@ export default function Home() {
               className="mb-[-0%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
             />
             <div aria-hidden="true" className="relative max-w-7xl">
-              <div className="absolute w-full bottom-0 left-0 inset-x-32 bg-gradient-to-t from-white/95 pt-[5%]" />
+              <div className="absolute inset-x-32 bottom-0 left-0 w-full bg-gradient-to-t from-white/95 pt-[5%]" />
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Home() {
                   <dt>
                     <feature.icon
                       aria-hidden="true"
-                      className="h-5 w-5 mr-2 text-indigo-600"
+                      className="mr-2 h-5 w-5 text-indigo-600"
                     />
                   </dt>
                   <div>
